@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4661 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: dca16846-0de9-5c58-95b6-5eb171cd27bc
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4661 — Ransomware C2 Communication [http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion/leak/643b036c3ace4551e2e0196c]"; content:"http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion/leak/643b036c3ace4551e2e0196c"; nocase; classtype:trojan-activity; sid:3565510; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4661 — Ransomware C2 Communication DNS [http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion/leak/643b036c3ace4551e2e0196c]"; content:"http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion/leak/643b036c3ace4551e2e0196c"; nocase; classtype:trojan-activity; sid:3565511; rev:1;)

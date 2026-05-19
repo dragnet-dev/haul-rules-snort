@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-4361 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: 7cce3b49-121c-5c92-a9ef-0d0a4bfa0acf
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-4361 — Ransomware C2 Communication [http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/2025/02/09/makeworth-accountants/]"; content:"http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/2025/02/09/makeworth-accountants/"; nocase; classtype:trojan-activity; sid:6890377; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-4361 — Ransomware C2 Communication DNS [http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/2025/02/09/makeworth-accountants/]"; content:"http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/2025/02/09/makeworth-accountants/"; nocase; classtype:trojan-activity; sid:6890378; rev:1;)

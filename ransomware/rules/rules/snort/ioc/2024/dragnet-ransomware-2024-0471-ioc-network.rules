@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0471 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: 1b2829d2-e652-5503-bb06-e463f5796bbf
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0471 — Ransomware C2 Communication [http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/./2024/04/17/asteco/index.html]"; content:"http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/./2024/04/17/asteco/index.html"; nocase; classtype:trojan-activity; sid:6616978; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0471 — Ransomware C2 Communication DNS [http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/./2024/04/17/asteco/index.html]"; content:"http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/./2024/04/17/asteco/index.html"; nocase; classtype:trojan-activity; sid:6616979; rev:1;)

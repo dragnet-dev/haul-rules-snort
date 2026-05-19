@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1706 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: 1f9011d4-0162-5c09-a20f-bf52480e138a
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1706 — Ransomware C2 Communication [http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion/companies/meriton.com.au/]"; content:"http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion/companies/meriton.com.au/"; nocase; classtype:trojan-activity; sid:8535444; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1706 — Ransomware C2 Communication DNS [http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion/companies/meriton.com.au/]"; content:"http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion/companies/meriton.com.au/"; nocase; classtype:trojan-activity; sid:8535445; rev:1;)

@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0371 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: 3b6c4b5d-da9d-54bb-ad0d-c8b7d780368f
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0371 — Ransomware C2 Communication [http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion//companies/northernminerals.com.au/]"; content:"http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion//companies/northernminerals.com.au/"; nocase; classtype:trojan-activity; sid:7952925; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0371 — Ransomware C2 Communication DNS [http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion//companies/northernminerals.com.au/]"; content:"http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion//companies/northernminerals.com.au/"; nocase; classtype:trojan-activity; sid:7952926; rev:1;)

@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-3334 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: bff36c79-30ae-56ff-90dd-8a397b7c53cc
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-3334 — Ransomware C2 Communication [https://breachforums.hn//qantas.html]"; content:"https://breachforums.hn//qantas.html"; nocase; classtype:trojan-activity; sid:8401273; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-3334 — Ransomware C2 Communication DNS [https://breachforums.hn//qantas.html]"; content:"https://breachforums.hn//qantas.html"; nocase; classtype:trojan-activity; sid:8401274; rev:1;)

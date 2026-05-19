@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5318 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: 08b7644f-1ca1-5567-b15c-d73a41c4953d
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5318 — Ransomware C2 Communication [https://breachforums.hn//cartier.html]"; content:"https://breachforums.hn//cartier.html"; nocase; classtype:trojan-activity; sid:3236495; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-5318 — Ransomware C2 Communication DNS [https://breachforums.hn//cartier.html]"; content:"https://breachforums.hn//cartier.html"; nocase; classtype:trojan-activity; sid:3236496; rev:1;)

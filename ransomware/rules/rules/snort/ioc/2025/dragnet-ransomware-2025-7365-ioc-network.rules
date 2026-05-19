@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7365 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: 3402808e-2ae3-53d3-a505-6018a0607c4b
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7365 — Ransomware C2 Communication [http://xtxtpqpyaaek4p4525ksepyyy75gfvi47fptm2gftw7cn656rnfhzdqd.onion/leaks/avantune]"; content:"http://xtxtpqpyaaek4p4525ksepyyy75gfvi47fptm2gftw7cn656rnfhzdqd.onion/leaks/avantune"; nocase; classtype:trojan-activity; sid:9579214; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7365 — Ransomware C2 Communication DNS [http://xtxtpqpyaaek4p4525ksepyyy75gfvi47fptm2gftw7cn656rnfhzdqd.onion/leaks/avantune]"; content:"http://xtxtpqpyaaek4p4525ksepyyy75gfvi47fptm2gftw7cn656rnfhzdqd.onion/leaks/avantune"; nocase; classtype:trojan-activity; sid:9579215; rev:1;)

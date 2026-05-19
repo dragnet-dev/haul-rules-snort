@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7778 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: ad70ed5d-f358-5d15-9b5d-6ac90b1196f8
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7778 — Ransomware C2 Communication [http://funksec.top/mandarin.com.br]"; content:"http://funksec.top/mandarin.com.br"; nocase; classtype:trojan-activity; sid:3859165; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7778 — Ransomware C2 Communication DNS [http://funksec.top/mandarin.com.br]"; content:"http://funksec.top/mandarin.com.br"; nocase; classtype:trojan-activity; sid:3859166; rev:1;)

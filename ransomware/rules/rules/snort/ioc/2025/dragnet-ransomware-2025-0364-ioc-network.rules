@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0364 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: 2747252b-ac55-5ea8-a097-1a18969fdc00
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0364 — Ransomware C2 Communication [http://funksec.top/hiway-com-br]"; content:"http://funksec.top/hiway-com-br"; nocase; classtype:trojan-activity; sid:2973995; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0364 — Ransomware C2 Communication DNS [http://funksec.top/hiway-com-br]"; content:"http://funksec.top/hiway-com-br"; nocase; classtype:trojan-activity; sid:2973996; rev:1;)
