@@ -1,4 +1,4 @@
 # Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0590 — Ransomware C2 Communication
-# Status: test | Level: high | ID: 253eb6c1-6b0c-51c9-a8f7-9215072a1df7
+# Status: experimental | Level: high | ID: 253eb6c1-6b0c-51c9-a8f7-9215072a1df7
 alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0590 — Ransomware C2 Communication [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/alshaya-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/alshaya-com"; nocase; classtype:trojan-activity; sid:4867009; rev:1;)
 alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0590 — Ransomware C2 Communication DNS [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/alshaya-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/alshaya-com"; nocase; classtype:trojan-activity; sid:4867010; rev:1;)

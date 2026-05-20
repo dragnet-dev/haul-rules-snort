@@ -1,4 +1,4 @@
 # Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1149 — Ransomware C2 Communication
-# Status: test | Level: high | ID: 827c814b-4f5f-5773-81ca-8ad1762e1232
+# Status: experimental | Level: high | ID: 827c814b-4f5f-5773-81ca-8ad1762e1232
 alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1149 — Ransomware C2 Communication [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/phoenix-edu]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/phoenix-edu"; nocase; classtype:trojan-activity; sid:3197643; rev:1;)
 alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1149 — Ransomware C2 Communication DNS [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/phoenix-edu]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/phoenix-edu"; nocase; classtype:trojan-activity; sid:3197644; rev:1;)
