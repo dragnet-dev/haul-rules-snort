@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-1246 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: 8e301e1f-869f-50ee-84ba-500d32a41595
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-1246 — Ransomware C2 Communication [http://weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd.onion/?id=hUjwIAfMjrsl50lZ]"; content:"http://weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd.onion/?id=hUjwIAfMjrsl50lZ"; nocase; classtype:trojan-activity; sid:1518111; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-1246 — Ransomware C2 Communication DNS [http://weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd.onion/?id=hUjwIAfMjrsl50lZ]"; content:"http://weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd.onion/?id=hUjwIAfMjrsl50lZ"; nocase; classtype:trojan-activity; sid:1518112; rev:1;)

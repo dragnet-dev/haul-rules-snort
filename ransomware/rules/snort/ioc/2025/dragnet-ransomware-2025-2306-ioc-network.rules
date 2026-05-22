@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2306 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: ea9db315-1bc0-512c-add2-041c742b1c58
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2306 — Ransomware C2 Communication [http://novaoddh3vxylxqpsfdjprliknbzgbkv6nkazpzu3cvykrgpyzuywryd.onion/UNIDEL]"; content:"http://novaoddh3vxylxqpsfdjprliknbzgbkv6nkazpzu3cvykrgpyzuywryd.onion/UNIDEL"; nocase; classtype:trojan-activity; sid:4203541; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2306 — Ransomware C2 Communication DNS [http://novaoddh3vxylxqpsfdjprliknbzgbkv6nkazpzu3cvykrgpyzuywryd.onion/UNIDEL]"; content:"http://novaoddh3vxylxqpsfdjprliknbzgbkv6nkazpzu3cvykrgpyzuywryd.onion/UNIDEL"; nocase; classtype:trojan-activity; sid:4203542; rev:1;)

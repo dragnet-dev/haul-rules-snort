@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1475 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: 64531760-29ba-53f2-abf1-1d01de158b6b
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1475 — Ransomware C2 Communication [http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion/posts/wealth-enhancement-group/]"; content:"http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion/posts/wealth-enhancement-group/"; nocase; classtype:trojan-activity; sid:1167072; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-1475 — Ransomware C2 Communication DNS [http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion/posts/wealth-enhancement-group/]"; content:"http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion/posts/wealth-enhancement-group/"; nocase; classtype:trojan-activity; sid:1167073; rev:1;)

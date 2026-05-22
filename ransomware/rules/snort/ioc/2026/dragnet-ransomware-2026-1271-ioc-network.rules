@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1271 — Ransomware C2 Communication
+# Status: stable | Level: high | ID: 9151dc31-b020-57fb-b459-1feab3c88e8d
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1271 — Ransomware C2 Communication [http://lgiil72vkmdtbc3qv4tyq6wedyjxqr2qd4ze7xl2cxgerdnymxj7soqd.onion/company/Y3SsApOQVgaXv2jLDE6hF]"; content:"http://lgiil72vkmdtbc3qv4tyq6wedyjxqr2qd4ze7xl2cxgerdnymxj7soqd.onion/company/Y3SsApOQVgaXv2jLDE6hF"; nocase; classtype:trojan-activity; sid:9061105; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1271 — Ransomware C2 Communication DNS [http://lgiil72vkmdtbc3qv4tyq6wedyjxqr2qd4ze7xl2cxgerdnymxj7soqd.onion/company/Y3SsApOQVgaXv2jLDE6hF]"; content:"http://lgiil72vkmdtbc3qv4tyq6wedyjxqr2qd4ze7xl2cxgerdnymxj7soqd.onion/company/Y3SsApOQVgaXv2jLDE6hF"; nocase; classtype:trojan-activity; sid:9061106; rev:1;)

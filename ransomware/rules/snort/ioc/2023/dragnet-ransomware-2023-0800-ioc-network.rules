@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0800 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: f8249111-a7d7-5ffd-a4a2-321689351649
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0800 — Ransomware C2 Communication [http://lockbitapt5x4zkjbcqmz6frdhecqqgadevyiwqxukksspnlidyvd7qd.onion/post/ghvyCgu86YeaYyy564495a3a4eaac]"; content:"http://lockbitapt5x4zkjbcqmz6frdhecqqgadevyiwqxukksspnlidyvd7qd.onion/post/ghvyCgu86YeaYyy564495a3a4eaac"; nocase; classtype:trojan-activity; sid:6146001; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0800 — Ransomware C2 Communication DNS [http://lockbitapt5x4zkjbcqmz6frdhecqqgadevyiwqxukksspnlidyvd7qd.onion/post/ghvyCgu86YeaYyy564495a3a4eaac]"; content:"http://lockbitapt5x4zkjbcqmz6frdhecqqgadevyiwqxukksspnlidyvd7qd.onion/post/ghvyCgu86YeaYyy564495a3a4eaac"; nocase; classtype:trojan-activity; sid:6146002; rev:1;)

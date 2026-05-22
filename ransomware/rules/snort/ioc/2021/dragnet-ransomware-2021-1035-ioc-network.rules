@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2021-1035 — Ransomware C2 Communication
+# Status: experimental | Level: high | ID: d90488e7-0b00-5f82-8a79-8af6d5147a85
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2021-1035 — Ransomware C2 Communication [https://dispossessor.com/blogs/153]"; content:"https://dispossessor.com/blogs/153"; nocase; classtype:trojan-activity; sid:5953063; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2021-1035 — Ransomware C2 Communication DNS [https://dispossessor.com/blogs/153]"; content:"https://dispossessor.com/blogs/153"; nocase; classtype:trojan-activity; sid:5953064; rev:1;)

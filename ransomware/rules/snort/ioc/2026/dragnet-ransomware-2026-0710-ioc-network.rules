@@ -1,0 +1,4 @@
+# Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0710 — Ransomware C2 Communication
+# Status: stable | Level: high | ID: aa0855ea-bb79-5bf5-9f28-fdccb64b15fe
+alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0710 — Ransomware C2 Communication [http://payoutsgn7cy6uliwevdqspncjpfxpmzgirwl2au65la7rfs5x3qnbqd.onion/nAs2Wf-lFOGgK-iEgaUX-tDFXig-M1odtF]"; content:"http://payoutsgn7cy6uliwevdqspncjpfxpmzgirwl2au65la7rfs5x3qnbqd.onion/nAs2Wf-lFOGgK-iEgaUX-tDFXig-M1odtF"; nocase; classtype:trojan-activity; sid:9673002; rev:1;)
+alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0710 — Ransomware C2 Communication DNS [http://payoutsgn7cy6uliwevdqspncjpfxpmzgirwl2au65la7rfs5x3qnbqd.onion/nAs2Wf-lFOGgK-iEgaUX-tDFXig-M1odtF]"; content:"http://payoutsgn7cy6uliwevdqspncjpfxpmzgirwl2au65la7rfs5x3qnbqd.onion/nAs2Wf-lFOGgK-iEgaUX-tDFXig-M1odtF"; nocase; classtype:trojan-activity; sid:9673003; rev:1;)
