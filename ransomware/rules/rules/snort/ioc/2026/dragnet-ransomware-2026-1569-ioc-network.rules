@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1569 — Ransomware C2 Communication
-# Status: stable | Level: high | ID: fd63ca7b-bdb8-5fdc-9ae9-7897ad8092e6
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1569 — Ransomware C2 Communication [http://lynxblogco7r37jt7p5wrmfxzqze7ghxw6rihzkqc455qluacwotciyd.onion/leaks/6a003c252b391873c7dd6d3e]"; content:"http://lynxblogco7r37jt7p5wrmfxzqze7ghxw6rihzkqc455qluacwotciyd.onion/leaks/6a003c252b391873c7dd6d3e"; nocase; classtype:trojan-activity; sid:4175547; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-1569 — Ransomware C2 Communication DNS [http://lynxblogco7r37jt7p5wrmfxzqze7ghxw6rihzkqc455qluacwotciyd.onion/leaks/6a003c252b391873c7dd6d3e]"; content:"http://lynxblogco7r37jt7p5wrmfxzqze7ghxw6rihzkqc455qluacwotciyd.onion/leaks/6a003c252b391873c7dd6d3e"; nocase; classtype:trojan-activity; sid:4175548; rev:1;)

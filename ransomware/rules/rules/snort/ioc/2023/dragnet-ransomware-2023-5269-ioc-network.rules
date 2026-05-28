@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5269 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 273ff9c1-3d76-5bfe-b5bd-6012e3fca99d
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5269 — Ransomware C2 Communication [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/alliedbenefit-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/alliedbenefit-com"; nocase; classtype:trojan-activity; sid:2504129; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5269 — Ransomware C2 Communication DNS [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/alliedbenefit-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/alliedbenefit-com"; nocase; classtype:trojan-activity; sid:2504130; rev:1;)

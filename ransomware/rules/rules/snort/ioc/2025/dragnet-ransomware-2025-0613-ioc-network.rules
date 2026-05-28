@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0613 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: e43c5263-2f40-52bc-afd8-67df852b71f8
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0613 — Ransomware C2 Communication [http://beast6azu4f7fxjakiayhnssybibsgjnmy77a6duufqw5afjzfjhzuqd.onion/card/windsor_realty_and_management]"; content:"http://beast6azu4f7fxjakiayhnssybibsgjnmy77a6duufqw5afjzfjhzuqd.onion/card/windsor_realty_and_management"; nocase; classtype:trojan-activity; sid:5158499; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-0613 — Ransomware C2 Communication DNS [http://beast6azu4f7fxjakiayhnssybibsgjnmy77a6duufqw5afjzfjhzuqd.onion/card/windsor_realty_and_management]"; content:"http://beast6azu4f7fxjakiayhnssybibsgjnmy77a6duufqw5afjzfjhzuqd.onion/card/windsor_realty_and_management"; nocase; classtype:trojan-activity; sid:5158500; rev:1;)

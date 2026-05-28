@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7498 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: b6b6f4f8-d496-5a31-8e1e-6a4aa7440671
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7498 — Ransomware C2 Communication [http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/70/nedved-architekti]"; content:"http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/70/nedved-architekti"; nocase; classtype:trojan-activity; sid:6443576; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-7498 — Ransomware C2 Communication DNS [http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/70/nedved-architekti]"; content:"http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/70/nedved-architekti"; nocase; classtype:trojan-activity; sid:6443577; rev:1;)

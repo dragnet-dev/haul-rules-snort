@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0193 — Ransomware C2 Communication
-# Status: stable | Level: high | ID: 9b9b5169-474d-57d0-bec4-f42fc44975fd
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0193 — Ransomware C2 Communication [http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=43]"; content:"http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=43"; nocase; classtype:trojan-activity; sid:1647401; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-0193 — Ransomware C2 Communication DNS [http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=43]"; content:"http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=43"; nocase; classtype:trojan-activity; sid:1647402; rev:1;)

@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0096 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: d944ea50-a868-5579-a49f-575f357d4b7d
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0096 — Ransomware C2 Communication [http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion//companies/akumin.com]"; content:"http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion//companies/akumin.com"; nocase; classtype:trojan-activity; sid:1172304; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0096 — Ransomware C2 Communication DNS [http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion//companies/akumin.com]"; content:"http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion//companies/akumin.com"; nocase; classtype:trojan-activity; sid:1172305; rev:1;)

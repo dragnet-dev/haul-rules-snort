@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2080 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: c0e7403b-3006-5281-aac4-e232203fa134
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2080 — Ransomware C2 Communication [http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/parksidegroupcouk/]"; content:"http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/parksidegroupcouk/"; nocase; classtype:trojan-activity; sid:6380731; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-2080 — Ransomware C2 Communication DNS [http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/parksidegroupcouk/]"; content:"http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/parksidegroupcouk/"; nocase; classtype:trojan-activity; sid:6380732; rev:1;)

@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2022-0342 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: ea3e9aea-5ca7-5e56-b4af-b9e68e4fe66e
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2022-0342 — Ransomware C2 Communication [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/perbit-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/perbit-com"; nocase; classtype:trojan-activity; sid:6971434; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2022-0342 — Ransomware C2 Communication DNS [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/perbit-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/perbit-com"; nocase; classtype:trojan-activity; sid:6971435; rev:1;)

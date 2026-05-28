@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1068 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 906c7a68-d586-5e3c-85dd-13e485b1ce41
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1068 — Ransomware C2 Communication [http://dnyyuk3nevegj37tnv3xav57c5twomc7uqsfbjlkwto3p4spzfop47qd.onion/index.php?p=]"; content:"http://dnyyuk3nevegj37tnv3xav57c5twomc7uqsfbjlkwto3p4spzfop47qd.onion/index.php?p="; nocase; classtype:trojan-activity; sid:3028328; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1068 — Ransomware C2 Communication DNS [http://dnyyuk3nevegj37tnv3xav57c5twomc7uqsfbjlkwto3p4spzfop47qd.onion/index.php?p=]"; content:"http://dnyyuk3nevegj37tnv3xav57c5twomc7uqsfbjlkwto3p4spzfop47qd.onion/index.php?p="; nocase; classtype:trojan-activity; sid:3028329; rev:1;)

@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0422 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: d6bc19f9-5e70-5db1-b88e-db5b82c13f0a
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0422 — Ransomware C2 Communication [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/zoskinhealth-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/zoskinhealth-com"; nocase; classtype:trojan-activity; sid:3651641; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0422 — Ransomware C2 Communication DNS [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/zoskinhealth-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/zoskinhealth-com"; nocase; classtype:trojan-activity; sid:3651642; rev:1;)

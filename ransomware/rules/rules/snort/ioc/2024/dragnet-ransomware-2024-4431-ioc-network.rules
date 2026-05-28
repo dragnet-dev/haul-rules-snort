@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-4431 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: c724c011-8e58-5ba8-9ad7-59eb246de65d
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-4431 — Ransomware C2 Communication [http://raworldw32b2qxevn3gp63pvibgixr4v75z62etlptg3u3pmajwra4ad.onion/post/wait.html]"; content:"http://raworldw32b2qxevn3gp63pvibgixr4v75z62etlptg3u3pmajwra4ad.onion/post/wait.html"; nocase; classtype:trojan-activity; sid:3074449; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-4431 — Ransomware C2 Communication DNS [http://raworldw32b2qxevn3gp63pvibgixr4v75z62etlptg3u3pmajwra4ad.onion/post/wait.html]"; content:"http://raworldw32b2qxevn3gp63pvibgixr4v75z62etlptg3u3pmajwra4ad.onion/post/wait.html"; nocase; classtype:trojan-activity; sid:3074450; rev:1;)

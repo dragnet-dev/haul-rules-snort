@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1001 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 03a0311d-441d-5ac9-885d-d73f327249bc
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1001 — Ransomware C2 Communication [http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/articles/Pergamon.html]"; content:"http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/articles/Pergamon.html"; nocase; classtype:trojan-activity; sid:7829981; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1001 — Ransomware C2 Communication DNS [http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/articles/Pergamon.html]"; content:"http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/articles/Pergamon.html"; nocase; classtype:trojan-activity; sid:7829982; rev:1;)

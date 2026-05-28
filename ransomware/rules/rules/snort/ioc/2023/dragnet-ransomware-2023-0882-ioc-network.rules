@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0882 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: cc7d683d-439b-592a-ab13-a543c60462a3
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0882 — Ransomware C2 Communication [http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion/company/goldmedalbakery]"; content:"http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion/company/goldmedalbakery"; nocase; classtype:trojan-activity; sid:2770749; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-0882 — Ransomware C2 Communication DNS [http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion/company/goldmedalbakery]"; content:"http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion/company/goldmedalbakery"; nocase; classtype:trojan-activity; sid:2770750; rev:1;)

@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5354 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: b3e06082-951b-537f-ae59-681a6c08d30d
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5354 — Ransomware C2 Communication [http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion#newhorizonsmedicalorg]"; content:"http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion#newhorizonsmedicalorg"; nocase; classtype:trojan-activity; sid:3826434; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-5354 — Ransomware C2 Communication DNS [http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion#newhorizonsmedicalorg]"; content:"http://devmanblggk7ddrtqj3tsocnayow3bwnozab2s4yhv4shpv6ueitjzid.onion#newhorizonsmedicalorg"; nocase; classtype:trojan-activity; sid:3826435; rev:1;)

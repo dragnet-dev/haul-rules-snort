@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3098 — Ransomware C2 Communication
-# Status: stable | Level: high | ID: d654df2c-5049-5a3d-853b-bbbdb41db5e6
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3098 — Ransomware C2 Communication [http://securo45z554mw7rgrt7wcgv5eenj2xmxyrsdj3fcjsvindu63s4bsid.onion]"; content:"http://securo45z554mw7rgrt7wcgv5eenj2xmxyrsdj3fcjsvindu63s4bsid.onion"; nocase; classtype:trojan-activity; sid:5886380; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3098 — Ransomware C2 Communication DNS [http://securo45z554mw7rgrt7wcgv5eenj2xmxyrsdj3fcjsvindu63s4bsid.onion]"; content:"http://securo45z554mw7rgrt7wcgv5eenj2xmxyrsdj3fcjsvindu63s4bsid.onion"; nocase; classtype:trojan-activity; sid:5886381; rev:1;)

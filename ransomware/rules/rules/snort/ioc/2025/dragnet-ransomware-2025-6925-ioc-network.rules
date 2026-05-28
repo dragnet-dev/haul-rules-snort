@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6925 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: ea6ebddf-dc74-5985-91f7-fe74676d15c8
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6925 — Ransomware C2 Communication [https://breachforums.hn//engie.html]"; content:"https://breachforums.hn//engie.html"; nocase; classtype:trojan-activity; sid:1126111; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6925 — Ransomware C2 Communication DNS [https://breachforums.hn//engie.html]"; content:"https://breachforums.hn//engie.html"; nocase; classtype:trojan-activity; sid:1126112; rev:1;)

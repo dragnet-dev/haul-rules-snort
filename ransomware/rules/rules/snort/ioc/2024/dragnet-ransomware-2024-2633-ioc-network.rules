@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-2633 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 68c9701d-0f8c-52ad-9195-cbe3b1c30269
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-2633 — Ransomware C2 Communication [http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion/?id=weberpackaging.com]"; content:"http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion/?id=weberpackaging.com"; nocase; classtype:trojan-activity; sid:4031901; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-2633 — Ransomware C2 Communication DNS [http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion/?id=weberpackaging.com]"; content:"http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion/?id=weberpackaging.com"; nocase; classtype:trojan-activity; sid:4031902; rev:1;)

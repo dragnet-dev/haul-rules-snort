@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3168 — Ransomware C2 Communication
-# Status: test | Level: high | ID: b792eb59-e2e0-5988-877e-c93f45585b90
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3168 — Ransomware C2 Communication [http://payoutsgn7cy6uliwevdqspncjpfxpmzgirwl2au65la7rfs5x3qnbqd.onion/gC9LlM-hj4AU8-6bxwfv-1B8CuO-2ZQ388]"; content:"http://payoutsgn7cy6uliwevdqspncjpfxpmzgirwl2au65la7rfs5x3qnbqd.onion/gC9LlM-hj4AU8-6bxwfv-1B8CuO-2ZQ388"; nocase; classtype:trojan-activity; sid:2859033; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3168 — Ransomware C2 Communication DNS [http://payoutsgn7cy6uliwevdqspncjpfxpmzgirwl2au65la7rfs5x3qnbqd.onion/gC9LlM-hj4AU8-6bxwfv-1B8CuO-2ZQ388]"; content:"http://payoutsgn7cy6uliwevdqspncjpfxpmzgirwl2au65la7rfs5x3qnbqd.onion/gC9LlM-hj4AU8-6bxwfv-1B8CuO-2ZQ388"; nocase; classtype:trojan-activity; sid:2859034; rev:1;)

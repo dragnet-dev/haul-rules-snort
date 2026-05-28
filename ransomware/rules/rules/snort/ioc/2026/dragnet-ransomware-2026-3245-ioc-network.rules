@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3245 — Ransomware C2 Communication
-# Status: stable | Level: high | ID: baea8da8-81c4-5afb-93c3-d0ed8dfa5b4f
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3245 — Ransomware C2 Communication [http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/5a1998fd944e3b312b5feadb0425f846]"; content:"http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/5a1998fd944e3b312b5feadb0425f846"; nocase; classtype:trojan-activity; sid:4933864; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3245 — Ransomware C2 Communication DNS [http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/5a1998fd944e3b312b5feadb0425f846]"; content:"http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/5a1998fd944e3b312b5feadb0425f846"; nocase; classtype:trojan-activity; sid:4933865; rev:1;)

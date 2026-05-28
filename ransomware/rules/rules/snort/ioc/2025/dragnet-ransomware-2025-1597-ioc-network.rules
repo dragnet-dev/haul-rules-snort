@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1597 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 85d0e2fc-c062-57d1-9c09-4c21b071219b
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1597 — Ransomware C2 Communication [http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/mcintoshlabscom/]"; content:"http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/mcintoshlabscom/"; nocase; classtype:trojan-activity; sid:5059324; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-1597 — Ransomware C2 Communication DNS [http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/mcintoshlabscom/]"; content:"http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/mcintoshlabscom/"; nocase; classtype:trojan-activity; sid:5059325; rev:1;)

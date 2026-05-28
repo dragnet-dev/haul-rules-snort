@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3823 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: a886d92c-68ed-562b-8e58-54786ecb00b8
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3823 — Ransomware C2 Communication [http://lynxblog.net/leaks/672f171fdab69e0ba2cdd890]"; content:"http://lynxblog.net/leaks/672f171fdab69e0ba2cdd890"; nocase; classtype:trojan-activity; sid:2409708; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3823 — Ransomware C2 Communication DNS [http://lynxblog.net/leaks/672f171fdab69e0ba2cdd890]"; content:"http://lynxblog.net/leaks/672f171fdab69e0ba2cdd890"; nocase; classtype:trojan-activity; sid:2409709; rev:1;)

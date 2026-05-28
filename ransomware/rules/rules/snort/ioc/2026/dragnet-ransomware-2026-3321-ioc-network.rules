@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3321 — Ransomware C2 Communication
-# Status: test | Level: high | ID: d2a26048-aeef-5914-a777-ceb997678984
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3321 — Ransomware C2 Communication [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/hudsonsustainable-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/hudsonsustainable-com"; nocase; classtype:trojan-activity; sid:6856840; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2026-3321 — Ransomware C2 Communication DNS [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/hudsonsustainable-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/hudsonsustainable-com"; nocase; classtype:trojan-activity; sid:6856841; rev:1;)

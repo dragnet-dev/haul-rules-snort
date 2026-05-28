@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0058 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 4d64e38a-2bd4-5f0e-9d3a-bba955c260ce
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0058 — Ransomware C2 Communication [https://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion/posts/FPS]"; content:"https://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion/posts/FPS"; nocase; classtype:trojan-activity; sid:3457482; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-0058 — Ransomware C2 Communication DNS [https://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion/posts/FPS]"; content:"https://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion/posts/FPS"; nocase; classtype:trojan-activity; sid:3457483; rev:1;)

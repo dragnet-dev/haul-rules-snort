@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4744 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 908c251b-b64f-5ca3-add6-bfeae73d301d
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4744 — Ransomware C2 Communication [http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion/?id=CEC]"; content:"http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion/?id=CEC"; nocase; classtype:trojan-activity; sid:5103643; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4744 — Ransomware C2 Communication DNS [http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion/?id=CEC]"; content:"http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion/?id=CEC"; nocase; classtype:trojan-activity; sid:5103644; rev:1;)

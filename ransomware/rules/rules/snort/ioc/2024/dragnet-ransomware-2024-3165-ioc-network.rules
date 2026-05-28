@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3165 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 6c16307c-e455-5e74-a593-6a3128a5e56b
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3165 — Ransomware C2 Communication [http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/2024/12/21/grupo-vargas/]"; content:"http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/2024/12/21/grupo-vargas/"; nocase; classtype:trojan-activity; sid:5393532; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3165 — Ransomware C2 Communication DNS [http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/2024/12/21/grupo-vargas/]"; content:"http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/2024/12/21/grupo-vargas/"; nocase; classtype:trojan-activity; sid:5393533; rev:1;)

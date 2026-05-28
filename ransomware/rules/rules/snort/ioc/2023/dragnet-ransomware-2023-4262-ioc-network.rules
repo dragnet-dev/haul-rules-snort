@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4262 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: ae44ddac-6023-5fe0-b2a0-ae41a0bd3b18
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4262 — Ransomware C2 Communication [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/marti-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/marti-com"; nocase; classtype:trojan-activity; sid:8748780; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-4262 — Ransomware C2 Communication DNS [http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/marti-com]"; content:"http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/marti-com"; nocase; classtype:trojan-activity; sid:8748781; rev:1;)

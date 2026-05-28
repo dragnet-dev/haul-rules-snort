@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-3855 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 195e5746-f6a3-5f81-9415-078b7561b0ea
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-3855 — Ransomware C2 Communication [https://dispossessor.com/blogs/811]"; content:"https://dispossessor.com/blogs/811"; nocase; classtype:trojan-activity; sid:3613126; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-3855 — Ransomware C2 Communication DNS [https://dispossessor.com/blogs/811]"; content:"https://dispossessor.com/blogs/811"; nocase; classtype:trojan-activity; sid:3613127; rev:1;)

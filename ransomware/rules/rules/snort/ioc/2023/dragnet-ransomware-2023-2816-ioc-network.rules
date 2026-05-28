@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-2816 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: dd4cd740-fdf7-5966-a0f1-72fe027eadaa
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-2816 — Ransomware C2 Communication [http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion/posts/defaulters/]"; content:"http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion/posts/defaulters/"; nocase; classtype:trojan-activity; sid:5800576; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2023-2816 — Ransomware C2 Communication DNS [http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion/posts/defaulters/]"; content:"http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion/posts/defaulters/"; nocase; classtype:trojan-activity; sid:5800577; rev:1;)

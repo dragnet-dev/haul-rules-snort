@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3848 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 5b2dae16-3a8e-5cd6-acc0-c6ca8256c27e
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3848 — Ransomware C2 Communication [https://handala.to/zionists-high-group-hacked/]"; content:"https://handala.to/zionists-high-group-hacked/"; nocase; classtype:trojan-activity; sid:9720342; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2024-3848 — Ransomware C2 Communication DNS [https://handala.to/zionists-high-group-hacked/]"; content:"https://handala.to/zionists-high-group-hacked/"; nocase; classtype:trojan-activity; sid:9720343; rev:1;)

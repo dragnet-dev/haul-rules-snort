@@ -1,4 +1,0 @@
-# Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6339 — Ransomware C2 Communication
-# Status: experimental | Level: high | ID: 2acfc175-35ee-53a4-9875-9ee753cc96ff
-alert tcp any any -> any any (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6339 — Ransomware C2 Communication [http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#kyoceradocumentsolutions.eu]"; content:"http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#kyoceradocumentsolutions.eu"; nocase; classtype:trojan-activity; sid:8258549; rev:1;)
-alert udp any any -> any 53 (msg:"Dragnet [Ransomware/IOC]: dragnet-ransomware-2025-6339 — Ransomware C2 Communication DNS [http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#kyoceradocumentsolutions.eu]"; content:"http://b4riuxx7ypobdptctf6lyfcvgi6vn74iurzdh4kn2agbk7472dvywgyd.onion#kyoceradocumentsolutions.eu"; nocase; classtype:trojan-activity; sid:8258550; rev:1;)
